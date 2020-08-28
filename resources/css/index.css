@@ -1,15 +1,36 @@
-﻿.banner{
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color: bisque;
+}
+
+.navbar li{
+    display:inline-block;
+    padding: 10px 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.banner{
     background-color: #FFAA00;
     color: SaddleBrown;
-    margin-top: 75px;
+    margin-top: 70px;
     text-align: center;
     padding: 50px;
+    width:100%
 }
 
 #small-mushi{
     height: 100px;
-    width:auto;
+    width: auto;
     filter: drop-shadow(2px 2px 2px black);
+}
+
+.mushi-section{
+    padding: 20px 50px
 }
 
 #mushi-headding{
@@ -17,6 +38,25 @@
     font-size: 100px;
 }
 
+#mushes ul{
+    list-style-type: none;
+}
+
+.avatar{
+    background-image: url('../images/Mushi-icon.png');
+    background-size: cover;
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    display:inline-block;
+    vertical-align: middle;
+    filter: drop-shadow(1px 1px 1px black);
+}
+
 .bold{
     font-weight: 900;
+}
+
+a.blue{
+    color:blue
 }
