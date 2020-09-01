@@ -23,6 +23,12 @@
     width:100%
 }
 
+.banner p {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding: 10px;
+}
+
 #small-mushi{
     height: 100px;
     width: auto;

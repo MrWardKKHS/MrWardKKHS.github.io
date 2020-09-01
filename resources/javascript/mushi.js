@@ -1,20 +1,22 @@
+console.log('everything working fine here')
+
 // DOM elements
-const rotateLeftButton = doccument.getElementById{'rotate-left-button'};
-const rotateRightButton = doccument.getElementById{'rotate-right-button'};
-const mushiBorder = doccument.getElementById{'mushi-border'};
-const mushiForm = doccument.getElementById{'mushi-form'};
+const rotateLeftButton = doccument.getElementById('rotate-left-button');
+const rotateRightButton = doccument.getElementById('rotate-right-button');
+const mushiBorder = doccument.getElementById('mushi-border');
+const mushiForm = doccument.getElementById('mushi-form');
 
 // global variables
 let rotation = 0;
 
 // event handlers
 function toggleMushi() {
-    const mushi = doccument.getElementById{'toggle-mushi'};
+    const mushi = doccument.getElementById('toggle-mushi');
     toggleVisibility(mushi);
 }
 
-function rotateMushi() {
-    const mushi = doccument.getElementById{'small-mushi'};
+function rotateMushi(event) {
+    const mushi = doccument.getElementById('small-mushi');
     rotate(mushi, event);
 }
 
@@ -31,7 +33,6 @@ function addMush(event) {
     newerMushLi.appendChild(newMushAvatar);
     newerMushLi.appendChild(newMushText)
     mushiForm.mush.value = "";
-
 }
 
 // helpers
@@ -46,7 +47,7 @@ function toggleVisibility(element){
 
 // given a DOM element and direction, rotate that element in that direction
 function rotate(element, event) {
-    if (event.target.id === 'rotate-left-button') {
+    if (event.target.id == 'rotate-left-button') {
         rotation = rotation - 15
     } else {
         rotation = rotation + 15
@@ -57,6 +58,6 @@ function rotate(element, event) {
 // add event handlers when mouse events are triggered
 mushiBorder.onmouseenter = toggleMushi;
 mushiBorder.onmouseleave = toggleMushi;
-rotateLeftButton.onclick = rotateMushi
-rotateRightButton.onclick = rotateMushi
-mushiForm.onsubmit = addMush
+rotateLeftButton.onclick = rotateMushi;
+rotateRightButton.onclick = rotateMushi;
+mushiForm.onsubmit = addMush;
