@@ -1,5 +1,3 @@
-console.log('everything working fine here')
-
 // DOM elements
 const rotateLeftButton = doccument.getElementById('rotate-left-button');
 const rotateRightButton = doccument.getElementById('rotate-right-button');
