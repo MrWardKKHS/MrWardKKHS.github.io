@@ -1,32 +1,32 @@
 // DOM elements
-const rotateLeftButton = doccument.getElementById('rotate-left-button');
-const rotateRightButton = doccument.getElementById('rotate-right-button');
-const mushiBorder = doccument.getElementById('mushi-border');
-const mushiForm = doccument.getElementById('mushi-form');
+const rotateLeftButton = document.getElementById('rotate-left-button');
+const rotateRightButton = document.getElementById('rotate-right-button');
+const mushiBorder = document.getElementById('mushi-border');
+const mushiForm = document.getElementById('mushi-form');
 
 // global variables
 let rotation = 0;
 
 // event handlers
 function toggleMushi() {
-    const mushi = doccument.getElementById('toggle-mushi');
+    const mushi = document.getElementById('toggle-mushi');
     toggleVisibility(mushi);
 }
 
 function rotateMushi(event) {
-    const mushi = doccument.getElementById('small-mushi');
+    const mushi = document.getElementById('small-mushi');
     rotate(mushi, event);
 }
 
 function addMush(event) {
     event.preventDefault();
     const mush = mushiForm.mush.value;
-    const newMushLi = doccument.createElement('li')
-    const newMushAvatar = doccument.createElement('div')
+    const newMushLi = document.createElement('li')
+    const newMushAvatar = document.createElement('div')
     newMushAvatar.className = 'avatar'
-    const newMushText = doccument.createElement('span')
+    const newMushText = document.createElement('span')
     newMushText.innerText = mush
-    const mushes = doccument.getElementById('mushes').getElementByTagName('ul')[0]
+    const mushes = document.getElementById('mushes').getElementByTagName('ul')[0]
     const newerMushLi = mushes.appendChild(newMushLi);
     newerMushLi.appendChild(newMushAvatar);
     newerMushLi.appendChild(newMushText)
@@ -54,8 +54,8 @@ function rotate(element, event) {
 }
 
 // add event handlers when mouse events are triggered
-mushiBorder.onmouseenter = toggleMushi;
-mushiBorder.onmouseleave = toggleMushi;
+// mushiBorder.onmouseenter = toggleMushi;
+// mushiBorder.onmouseleave = toggleMushi;
 rotateLeftButton.onclick = rotateMushi;
 rotateRightButton.onclick = rotateMushi;
-mushiForm.onsubmit = addMush;
+// mushiForm.onsubmit = addMush;
