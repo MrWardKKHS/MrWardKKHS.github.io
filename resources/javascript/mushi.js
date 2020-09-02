@@ -19,6 +19,7 @@ function rotateMushi(event) {
 }
 
 function addMush(event) {
+    console.log('its working so far')
     event.preventDefault();
     const mush = mushiForm.mush.value;
     const newMushLi = document.createElement('li')
@@ -26,7 +27,7 @@ function addMush(event) {
     newMushAvatar.className = 'avatar'
     const newMushText = document.createElement('span')
     newMushText.innerText = mush
-    const mushes = document.getElementById('mushes').getElementByTagName('ul')[0]
+    const mushes = document.getElementById('mushes').getElementsByTagName('ul')[0]
     const newerMushLi = mushes.appendChild(newMushLi);
     newerMushLi.appendChild(newMushAvatar);
     newerMushLi.appendChild(newMushText)
@@ -54,8 +55,8 @@ function rotate(element, event) {
 }
 
 // add event handlers when mouse events are triggered
-// mushiBorder.onmouseenter = toggleMushi;
-// mushiBorder.onmouseleave = toggleMushi;
+//mushiBorder.onmouseenter = toggleMushi;
+//mushiBorder.onmouseleave = toggleMushi;
 rotateLeftButton.onclick = rotateMushi;
 rotateRightButton.onclick = rotateMushi;
-// mushiForm.onsubmit = addMush;
+mushiForm.onsubmit = addMush;
