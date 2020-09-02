@@ -35,11 +35,36 @@
     filter: drop-shadow(2px 2px 2px black);
 }
 
-.mushi-section{
-    padding: 20px 50px
+#hide-and-go {
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    color: #444444;
 }
 
-#mushi-headding{
+#hide-header {
+    color: SaddleBrown;
+    font-size: 30px;
+}
+
+.border {
+    border: 5px solid orange;
+    margin: auto;
+    width: 20%;
+}
+
+.border img {
+    width: 90%;
+}
+
+.mushify-card {
+    background-color: #FC3;
+    margin: 50px 0;
+    padding: 20px 50px;
+    width: 100%;
+}
+
+#mushify{
     color: SaddleBrown;
     font-size: 100px;
 }
@@ -51,18 +76,20 @@
 .avatar{
     background-image: url('../images/Mushi-icon.png');
     background-size: cover;
-    height:50px;
-    width:50px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     display:inline-block;
     vertical-align: middle;
     filter: drop-shadow(1px 1px 1px black);
+    padding-right: 10px;
 }
 
 .bold{
+    color: SaddleBrown;
     font-weight: 900;
 }
 
 a.blue{
-    color:blue
+    color: blue
 }
