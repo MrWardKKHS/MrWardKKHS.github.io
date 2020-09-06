@@ -1,0 +1,23 @@
+/* my first style sheet */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #AAAACC;
+}
+img {
+    border: 10px solid green;
+}
+h1 {
+    border: dashed 5px red
+}
+blockquote{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    text-align: center;
+}
+cite {
+    font-size: 1.5rem
+}
+.bigbold{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
