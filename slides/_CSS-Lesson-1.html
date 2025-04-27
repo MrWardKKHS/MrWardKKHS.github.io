@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FLAME Lesson 3 – Basic CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/monokai.css">
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+
+<section>
+  <p>CSS Lesson 1 - Styling Maelor the Spellwright</p>
+
+  <section>
+    <h2>Recap - previously</h2>
+  </section>
+
+  <section>
+    <h3>✅ HTML gives the webpage structure</h3>
+    <p>We marked up text with real meaning: headings, paragraphs, lists, links, images</p>
+  </section>
+
+  <section>
+    <h3>✅ Now we control how it looks</h3>
+    <p>CSS = the <strong>paint, layout, polish, personality</strong></p>
+    <p>Same words. Different presentation.</p>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Today's Learning Outcomes</h2>
+    <ul>
+      <li>✅ Understand basic CSS structure</li>
+      <li>✅ Use classes and IDs to target elements</li>
+      <li>✅ Adjust colors, borders, margins, and padding</li>
+      <li>✅ Build and style your own candidate profile card</li>
+    </ul>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>What is CSS?</h2>
+  </section>
+
+  <section>
+    <h3>✅ HTML = "What"</h3>
+    <h3>✅ CSS = "How it looks"</h3>
+    <p>CSS lets you style everything — layout, spacing, color, fonts, and more</p>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>CSS Structure</h2>
+    <p>CSS follows a simple format:</p>
+
+    <pre><code class="css">
+selector {
+  property: value;
+}
+</code></pre>
+  </section>
+
+  <section>
+    <h3>Example</h3>
+    <pre><code class="css">
+h1 {
+  color: orange;
+}
+</code></pre>
+    <div style="background: white; color: black; padding: 10px; max-width: 600px; margin: auto; text-align: center;">
+      <h1 style="color: orange;">Styled Heading</h1>
+    </div>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>CSS Selectors</h2>
+    <ul>
+      <li><code>tagname</code> – Styles all tags (e.g., <code>h1</code>)</li>
+      <li><code>.classname</code> – Styles anything with that class</li>
+      <li><code>#idname</code> – Styles one specific ID</li>
+    </ul>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>CSS Properties We'll Use Today</h2>
+    <ul>
+      <li><code>color</code> – text color</li>
+      <li><code>background-color</code> – background shade</li>
+      <li><code>padding</code> – inside space</li>
+      <li><code>margin</code> – outside space</li>
+      <li><code>border</code> – border around things</li>
+      <li><code>border-radius</code> – rounded corners</li>
+      <li><code>max-width</code> – control size of elements</li>
+      <li><code>text-align</code> – left, right, center text</li>
+    </ul>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Maelor's Card - Starting Point</h2>
+    <p>(Raw HTML, no styling yet)</p>
+    <div style="background: white; color: black; padding: 15px; max-width: 600px; margin: auto; font-size: 0.8em;">
+      <h1>Candidate Profile: Maelor the Spellwright</h1>
+      <p id="tagline">"I don’t raise my voice. The orb speaks louder."</p>
+      <div class="profile-card">
+        <img src="https://images.unsplash.com/photo-1634409884980-a30da0b2b010?w=300" alt="Maelor holding a glowing orb" class="profile-img">
+        <h2>About</h2>
+        <p>Maelor is a senior spellwright from the Obsidian Archives...</p>
+        <h2>Key Campaign Policies</h2>
+        <ul>
+          <li>Orb-handling licenses for all apprentices</li>
+          <li>Universal hazard pay for night-casting</li>
+          <li>Ban on unstable enchantments in public places</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Predict What Will Happen</h2>
+    <ul>
+      <li>🧠 Predict: Where will the image show up?</li>
+      <li>🧠 Predict: Will the profile fit nicely?</li>
+    </ul>
+    <p>Then: hit Run and find out!</p>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Investigate</h2>
+    <ul>
+      <li>What does <code>max-width</code> control?</li>
+      <li>What’s the difference between <code>margin</code> and <code>padding</code>?</li>
+      <li>Why do we use <code>.</code> and <code>#</code> in CSS?</li>
+    </ul>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Modify</h2>
+    <ul>
+      <li>✅ Round the image corners more</li>
+      <li>✅ Add a soft drop shadow to the card</li>
+      <li>✅ Try changing where the image appears (before/after text)</li>
+    </ul>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Make</h2>
+    <p>Create your own candidate profile!</p>
+    <ul>
+      <li>Find a new image</li>
+      <li>Write a new character intro</li>
+      <li>Change colors, fonts, or layouts</li>
+    </ul>
+  </section>
+</section>
+
+<section>
+  <h2>Get Started!</h2>
+  <p>Use the starter CodePen to style Maelor:</p>
+  <p><a href="https://codepen.io/your-codepen-link-here" target="_blank">[Open Starter CodePen]</a></p>
+  <p>Check the CSS block for further instructions</p>
+</section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/highlight.js"></script>
+<script>
+  Reveal.initialize({ plugins: [ RevealHighlight ] });
+</script>
+
+</body>
+</html>
+

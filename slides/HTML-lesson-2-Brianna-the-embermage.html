@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FLAME Lesson 2 – Brina the Embermage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/monokai.css">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section>
+    <p>HTML Lesson 2 - Brianna the embermage</p>
+    <section>
+        <h2>Recap - previously</h2>
+    </section>
+    <section>
+        <h3>3 main parts to a webpage</h3>
+        <p>Structure is from <strong>HTML</strong> (the walls 🧱)</p>
+        <p>Looks is from <strong>CSS</strong> (the paint 🖌️)</p>
+        <p>The logic from <strong>JavaScript</strong> (the brain 🧠) </p>
+    </section>
+    <section>
+        <h3>✅ Tags give <em>meaning</em>, not <em>looks</em></h3>
+        <p>Don't use HTML to get a webpage to <strong>look right</strong></p>
+        <p>Use HTML to get everything <strong>correctly described</strong></p>
+    </section>
+    <section>
+        <h3>✅ Browsers handle most of the heavy lifting</h3>
+        <p>They have <em>some</em> basic styling built in</p>
+        <p>They know how to run your Javascript code</p>
+        <p>and much, much more</p>
+    </section>
+    <section>
+        <p>We used: <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;img&gt;</code></p>
+    </section>
+</section>
+
+
+
+<section>
+    <section>
+        <h2>Today's Learning Outcomes</h2>
+        <ul>
+          <li>✅ Add HTML to pre-existing text</li>
+          <li>✅ Choose meaningful, semantic tags</li>
+          <li>✅ Apply proper HTML <strong>conventions</strong></li>
+          <li>✅ Build a fully structured article</li>
+        </ul>
+    </section>
+    <section>
+        <h3>And most importantly</h3>
+        <ul>
+          <li>✅ Realise there's no "correct" answer</li>
+        </ul>
+    </section>
+</section>
+
+<section>
+  <h2>Tags Revision Quiz</h2>
+
+  <section>
+    <p>Which tag is used for the main heading on a webpage?</p>
+  </section>
+  <section>
+    <pre><code class="html">&lt;h1&gt;Main heading&lt;/h1&gt;</code></pre>
+  </section>
+
+  <section>
+    <p>What does the <code>href</code> attribute do inside an <code>&lt;a&gt;</code> tag?</p>
+  </section>
+  <section>
+    <p><code>href</code> tells the browser where the link should go.</p>
+    <pre><code class="html">&lt;a href="https://example.com"&gt;Visit Site&lt;/a&gt;</code></pre>
+    <p>Hypertext REFrence</p>
+  </section>
+
+  <section>
+    <p>Which tag is used to add an image to your page?</p>
+  </section>
+  <section>
+    <pre><code class="html">&lt;img src="path-to-image.jpg" alt="Description"&gt;</code></pre>
+  </section>
+
+  <section>
+    <p>How would you correctly code a simple bullet list?</p>
+  </section>
+  <section>
+    <pre><code class="html">&lt;ul&gt;
+  &lt;li&gt;First point&lt;/li&gt;
+  &lt;li&gt;Second point&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </section>
+
+  <section>
+    <p>What mistakes do you see here?</p>
+    <pre><code class="html">&lt;a&gt;Click here&lt;a&gt;</code></pre>
+  </section>
+  <section>
+      <p>It’s missing the <code>href=""</code> attribute. </p>
+      <p>The end tag was not a closing tag. </p> 
+      <p>Correct version:</p>
+    <pre><code class="html">&lt;a href="https://example.com"&gt;Click here&lt;/a&gt;</code></pre>
+  </section>
+
+    <section>
+    <p>Which tag would you use for a sub-heading under an <code>&lt;h1&gt;</code>?</p>
+  </section>
+  <section>
+    <p>Use an <code>&lt;h2&gt;</code> tag for sub-headings under <code>&lt;h1&gt;</code>.</p>
+    <pre><code class="html">&lt;h2&gt;Sub-heading&lt;/h2&gt;</code></pre>
+  </section>
+
+  <section>
+    <p>What is wrong with this hyperlink?</p>
+    <pre><code class="html">&lt;a href=https://example.com&gt;Click here&lt;/a&gt;</code></pre>
+  </section>
+  <section>
+      <p>The URL must be inside quotes ("").</p>
+      <p> Correct:</p>
+    <pre><code class="html">&lt;a href="https://example.com"&gt;Click here&lt;/a&gt;</code></pre>
+  </section>
+
+  <section>
+    <p>True or False: You can nest a list inside a list?</p>
+  </section>
+  <section>
+    <p><strong>True!</strong> Example:</p>
+    <pre><code class="html">&lt;ul&gt;
+  &lt;li&gt;Main Point
+    &lt;ul&gt;
+      &lt;li&gt;Sub-point&lt;/li&gt;
+      &lt;li&gt;Sub-point 2&lt;/li&gt;
+      &lt;li&gt;Sub-point 3&lt;/li&gt;
+      &lt;li&gt;Sub-point 4&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Second Main Point
+&lt;/ul&gt;</code></pre>
+  </section>
+</section>
+
+
+
+<section>
+  <h3>🌐 There are <strong>over 100 HTML tags</strong>!</h3>
+  <p>But we will only ever need a few</p>
+  <br>
+  <p>If you're curious, check the full tag reference:</p>
+  <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML Tag Reference (MDN)</a></p>
+  <p>🧠 Don't memorise - look it up!</p>
+</section>
+
+
+<section>
+    <h2>Brina's Story – BEFORE Markup</h2>
+    <div style="font-size: 0.5em; border: 1px solid #ccc; padding: 15px; margin: auto;">
+        F.L.A.M.E. Case Study: Brina the Apprentice Mage
+
+Story from the campaign: The Right to Rest
+
+Brina is a 14-year-old apprentice mage from Emberhill. She's part of the Arcane Engineers subgroup of F.L.A.M.E.
+
+She says:
+
+I was expected to stay up three nights in a row enchanting scrolls for a royal gala. No one asked if I needed sleep, food, or time to recharge. I made a mistake on the final scroll and it exploded in my face. The senior wizard blamed me.
+
+This isn’t just my story. Lots of apprentices are burning out—literally.
+
+This is why I joined the Right to Rest campaign. It's not lazy to rest—it's responsible.
+
+Main issues Brina faced:
+No sleep schedule
+No lunch breaks
+No protection for magical burnout
+
+The F.L.A.M.E. union is helping me speak up. I finally feel heard.
+
+Image: Brina holding a glowing scroll
+
+Links:
+Visit the F.L.A.M.E. site: https://flame-union.example.com
+See all case studies: case-studies.html
+Go to homepage: index.html
+
+Support this campaign.
+    </div>
+</section>
+
+<section>
+  <section>
+    <h2>Choosing the Right Tags</h2>
+  </section>
+
+  <section>
+    <h3>&lt;h1&gt; – Headings</h3>
+    <pre><code class="html">&lt;h1&gt;Right to Rest Campaign&lt;/h1&gt;</code></pre>
+    <div style="color: black; padding: 10px; max-width:600px; margin: auto;">
+      <h1>Right to Rest Campaign</h1>
+    </div>
+  </section>
+
+  <section>
+    <h3>&lt;p&gt; – Paragraphs</h3>
+    <pre><code class="html">&lt;p&gt;Brina works long hours without breaks.&lt;/p&gt;</code></pre>
+    <div style="background: white; color: black; padding: 10px; max-width:600px; margin: auto;">
+      <p>Brina works long hours without breaks.</p>
+    </div>
+  </section>
+
+  <section>
+    <h3>&lt;ul&gt; &amp; &lt;li&gt; – Lists</h3>
+    <pre><code class="html">&lt;ul&gt;
+  &lt;li&gt;No sleep schedule&lt;/li&gt;
+  &lt;li&gt;No lunch breaks&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    <div style="background: white; color: black; padding: 10px; max-width:600px; margin: auto;">
+      <ul>
+        <li>No sleep schedule</li>
+        <li>No lunch breaks</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h3>&lt;a&gt; – Links</h3>
+    <pre><code class="html">&lt;a href="https://flame-union.example.com"&gt;Visit FLAME&lt;/a&gt;</code></pre>
+    <div style="background: white; color: black; padding: 10px; max-width:600px; margin: auto;">
+      <a href="#">Visit FLAME</a>
+    </div>
+  </section>
+
+  <section>
+    <h3>&lt;img&gt; – Images</h3>
+    <pre><code class="html">&lt;img src="brina.png" alt="Brina with a scroll"&gt;</code></pre>
+    <div style="background: white; color: black; padding: 10px; max-width:600px; margin: auto;">
+      <img src="briana.png" alt="Brina with a scroll" height="300px">
+    </div>
+  </section>
+
+  <section>
+    <h3>&lt;figure&gt; – Image with Caption</h3>
+    <pre><code class="html">&lt;figure&gt;
+  &lt;img src="brina.png" alt="Brina"&gt;
+  &lt;figcaption&gt;Brina the Apprentice Mage&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+    <div style="background: white; color: black; padding: 10px; max-width:600px; margin: auto;">
+      <figure>
+        <img src="briana.png" alt="Brina" height="300px">
+        <figcaption>Brina the Apprentice Mage</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h3>&lt;blockquote&gt; – Quoting Brina</h3>
+    <pre><code class="html">&lt;blockquote&gt;
+  "We deserve proper rest!"
+&lt;/blockquote&gt;</code></pre>
+    <div style="background: white; color: black; padding: 10px; max-width:600px; margin: auto;">
+      <blockquote>"We deserve proper rest!"</blockquote>
+    </div>
+  </section>
+
+  <section>
+    <h3>&lt;button&gt; – Support Button</h3>
+    <pre><code class="html">&lt;button&gt;Support Brina&lt;/button&gt;</code></pre>
+    <div style="background: white; color: black; padding: 10px; max-width:600px; margin: auto;">
+      <button>Support Brina</button>
+    </div>
+  </section>
+
+  <section>
+    <h3>&lt;em&gt; and &lt;strong&gt; – Meaningful Emphasis</h3>
+    <pre><code class="html">&lt;p&gt;Rest is &lt;em&gt;essential&lt;/em&gt; for apprentices.&lt;/p&gt;
+&lt;p&gt;Safety must be a &lt;strong&gt;priority&lt;/strong&gt;.&lt;/p&gt;</code></pre>
+    <div style="background: white; color: black; padding: 10px; max-width:600px; margin: auto;">
+      <p>Rest is <em>essential</em> for apprentices.</p>
+      <p>Safety must be a <strong>priority</strong>.</p>
+    </div>
+  </section>
+</section>
+
+<section>
+<h2>Brina's Story – AFTER Markup</h2>
+<div style="font-size: 0.5em; border: 1px solid #ccc; padding: 15px; color: black; margin: auto; color: white;">
+  <h1>F.L.A.M.E. Case Study: Brina the Apprentice Mage</h1>
+  <h2>Story from the Campaign: The Right to Rest</h2>
+  <p>Brina is a 14-year-old apprentice mage from Emberhill. She's part of the Arcane Engineers subgroup of F.L.A.M.E.</p>
+  <ul>
+    <li>No sleep schedule</li>
+    <li>No lunch breaks</li>
+    <li>No protection for magical burnout</li>
+  </ul>
+  <p><a href="https://flame-union.example.com">Visit the F.L.A.M.E. site</a></p>
+</div>
+</section>
+
+<section>
+<h2>Get Started!</h2>
+<p>Use the starter CodePen to build your structured page:</p>
+<p><a href="https://codepen.io/mrwardkkhs/pen/jEEqYpq?editors=1000" target="_blank">[Open Starter CodePen]</a></p>
+<p>Check the CSS block for further instructions</p>
+</section>
+
+</div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/highlight.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+    Reveal.initialize({ plugins: [ RevealHighlight ] });
+  </script>
+</body>
+</html>
+

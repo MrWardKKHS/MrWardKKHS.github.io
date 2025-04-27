@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Slide Decks</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+      background: #f5f5f5;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .slides-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5em;
+      justify-content: center;
+      margin-top: 2em;
+    }
+    .card {
+      width: 220px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img, .placeholder-thumb {
+      width: 100%;
+      height: 130px;
+      object-fit: cover;
+      background: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #555;
+      font-size: 0.9em;
+    }
+    .card h3 {
+      margin: 0.5em;
+      font-size: 1.1em;
+    }
+    .card a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📚 Welcome to My Slide Decks</h1>
+  <p style="text-align:center;">Here you'll find all my Reveal.js presentations, organized and ready to view. Each card below links to a deck.</p>
+
+  <section id="Slides">
+    <h2>Slides</h2>
+    <div class="slides-wrapper">
+      
+      <div class="card">
+        <a href="CSS-Lesson-1.html">
+          <div class="placeholder-thumb">No Preview</div>
+          <h3>CSS Lesson 1</h3>
+        </a>
+      </div>
+    
+
+      <div class="card">
+        <a href="HTML-lesson-1.html">
+          <img src="HTML-lesson-1-thumb.png" alt="HTML Lesson 1 thumbnail" />
+          <h3>HTML Lesson 1</h3>
+        </a>
+      </div>
+    
+
+      <div class="card">
+        <a href="HTML-lesson-2-Brianna-the-embermage.html">
+          <img src="HTML-lesson-2-Brianna-the-embermage-thumb.png" alt="HTML Lesson 2 Brianna The Embermage thumbnail" />
+          <h3>HTML Lesson 2 Brianna The Embermage</h3>
+        </a>
+      </div>
+    
+    </div>
+    
+
+      <div class="card">
+        <a href="HTML-lesson-2-Brianna-the-embermage.html">
+          <img src="HTML-lesson-2-Brianna-the-embermage-thumb.png" alt="HTML Lesson 2 Brianna The Embermage thumbnail" />
+          <h3>HTML Lesson 2 Brianna The Embermage</h3>
+        </a>
+      </div>
+    
+    </div>
+    
+    </div>
+  </section>
+
+</body>
+</html>
+

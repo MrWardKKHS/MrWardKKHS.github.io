@@ -1,0 +1,70 @@
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: 'Barlow Condensed', sans-serif;
+    --sans: 'Montserrat', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding:0; 
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+a {
+  color: var(--magenta)
+}
+
+a:hover {
+  color: var(--hotmag);
+  text-decoration: none;
+}
+
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#intro .name {
+  font-family: var(--mono);
+}
+
+.name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--aqua);
+  display: block;
+}
+
+#contact {
+  background: var(--plum);
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+#contact p:last-child {
+  margin-top: 3rem;
+
+}
