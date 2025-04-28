@@ -5,25 +5,32 @@ const path = require('path');
 const deckDir = path.join(__dirname);
 const indexPath = path.join(deckDir, 'index.html');
 
-// Helper to convert filename to Title Case
+// Helper to convert filename to Title Case (only for display)
 function filenameToTitle(name) {
   return name
-    .replace(/\.html$/, '')
-    .replace(/[-_]/g, ' ')
-    .replace(/\b\w/g, c => c.toUpperCase());
+    .replace(/\.html$/, '')      // Remove .html
+    .replace(/^\d+-/, '')         // Remove leading number and dash
+    .replace(/[-_]/g, ' ')        // Replace dashes and underscores
+    .replace(/\b\w/g, c => c.toUpperCase()); // Title Case
 }
 
 // Build the HTML for the cards
 const cards = fs.readdirSync(deckDir)
   .filter(file => file.endsWith('.html') && file !== 'index.html')
+  .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
   .map(file => {
-    const base = file.replace(/\.html$/, '');
-    const title = filenameToTitle(file);
-    const thumb = `${base}-thumb.png`;
+    const base = file.replace(/\.html$/, ''); // keep the original filename for thumb
+    const title = filenameToTitle(file);      // for visible title only
+    const thumb = `${base}-thumb.png`;         // thumb matches numbered base!
 
-    const imgTag = fs.existsSync(path.join(deckDir, thumb))
+    const thumbPath = path.join(deckDir, thumb);
+    const imgTag = fs.existsSync(thumbPath)
       ? `<img src="${thumb}" alt="${title} thumbnail" />`
-      : `<div class="placeholder-thumb">No Preview</div>`;
+      : `
+        <div class="generated-thumb">
+          <div class="generated-thumb-text">${title}</div>
+        </div>
+      `;
 
     return `
       <div class="card">

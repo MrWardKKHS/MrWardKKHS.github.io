@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FLAME Lesson 3 – Basic CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/monokai.css">
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+
+<section>
+  <p>CSS Lesson 1 - Styling Maelor the Spellwright</p>
+
+  <section>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="102.3716mm"
+   height="144.49777mm"
+   viewBox="0 0 362.73401 511.99998"
+   id="animate-svg"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="CSS3.svg">
+  <defs
+     id="defs3478" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="181.367"
+     inkscape:cy="256"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="704"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3481">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-193.633,-276.3622)">
+    <g
+       id="g3013"
+       transform="translate(119,276.3622)">
+      <polygon
+         id="polygon2989"
+         points="437.367,100.62 404.321,470.819 255.778,512 107.644,470.877 74.633,100.62 "
+         style="fill:#264de4" />
+      <polygon
+         id="polygon2991"
+         points="376.03,447.246 404.27,130.894 256,130.894 256,480.523 "
+         style="fill:#2965f1" />
+      <polygon
+         id="polygon2993"
+         points="150.31,268.217 154.38,313.627 256,313.627 256,268.217 "
+         style="fill:#ebebeb" />
+      <polygon
+         id="polygon2995"
+         points="256,176.305 255.843,176.305 142.132,176.305 146.26,221.716 256,221.716 "
+         style="fill:#ebebeb" />
+      <polygon
+         id="polygon2997"
+         points="256,433.399 256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 "
+         style="fill:#ebebeb" />
+      <path
+         id="path2999"
+         d="m 160,0 55,0 0,23 -32,0 0,23 32,0 0,23 -55,0 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff" />
+      <path
+         id="path3001"
+         d="m 226,0 55,0 0,20 -32,0 0,4 32,0 0,46 -55,0 0,-21 32,0 0,-4 -32,0 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff" />
+      <path
+         id="path3003"
+         d="m 292,0 55,0 0,20 -32,0 0,4 32,0 0,46 -55,0 0,-21 32,0 0,-4 -32,0 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff" />
+      <polygon
+         id="polygon3005"
+         points="311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 369.597,176.305 255.843,176.305 255.843,221.716 319.831,221.716 315.699,268.217 255.843,268.217 255.843,313.627 "
+         style="fill:#ffffff" />
+    </g>
+  </g>
+</svg>
+
+  </section>
+  <section>
+    <h2>Recap - previously</h2>
+  </section>
+
+  <section>
+    <h3>✅ HTML gives the webpage structure</h3>
+    <p>We marked up text with real meaning: headings, paragraphs, lists, links, images</p>
+  </section>
+
+  <section>
+    <h3>✅ Now we control how it looks</h3>
+    <p>CSS = the <strong>paint, layout, polish, personality</strong></p>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Today's Learning Outcomes</h2>
+    <ul>
+      <li>✅ Understand basic CSS structure</li>
+      <li>✅ Use classes and IDs to target elements</li>
+      <li>✅ Adjust colors, borders, margins, and padding</li>
+      <li>✅ Build and style your own candidate profile card</li>
+    </ul>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>What is CSS?</h2>
+  </section>
+
+  <section>
+    <h2>CSS Structure</h2>
+    <p>CSS follows a simple format:</p>
+
+    <pre><code class="css">
+selector {
+  property: value;
+}
+</code></pre>
+  </section>
+
+  <section>
+    <h3>Example</h3>
+    <pre><code class="css">
+h1 {
+  color: orange;
+}
+</code></pre>
+    <div style="background: white; color: black; padding: 10px; max-width: 600px; margin: auto; text-align: center;">
+      <h1 style="color: orange;">Styled Heading</h1>
+    </div>
+  </section>
+  <section>
+    <h3>Example</h3>
+    <pre><code class="css">
+h1 {
+  color: blue;
+}
+</code></pre>
+    <div style="background: white; color: black; padding: 10px; max-width: 600px; margin: auto; text-align: center;">
+      <h1 style="color: blue;">Styled Heading</h1>
+    </div>
+  </section>
+  <section>
+      <h3>How do I know what I can do?</h3>
+      <p>Use the <strong>reference</strong></p>
+      I recomend <a href="https://www.w3schools.com/CSSref/index.php">W3 Schools</a>.
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>CSS Selectors Overview</h2>
+    <ul>
+      <li><code>tagname</code> – Styles all tags (e.g., <code>h1</code>)</li>
+      <li><code>.classname</code> – Styles elements with a class</li>
+      <li><code>#idname</code> – Styles a specific element by ID</li>
+    </ul>
+  </section>
+
+  <section>
+  <h2>Example: ID and Class Together</h2>
+  <pre><code class="language-html">
+&lt;p id="special" class="highlight"&gt;
+  This paragraph has both an ID and a class.
+&lt;/p&gt;
+  </code></pre>
+
+  <div style="border: 1px solid #ccc; padding: 1em; margin-top: 1em;">
+    <p id="special" class="highlight">
+      This paragraph has both an ID and a class.
+    </p>
+  </div>
+</section>
+
+  <section>
+    <h2>Example: Styling the <code>body</code></h2>
+    <pre><code class="language-css">
+body {
+  color: red;
+}
+    </code></pre>
+
+    <p>This sets the <strong>default text color</strong> for the whole page to red.</p>
+    <div> 
+      <p style="border: 1px solid #ccc; padding: 1em; color: red">This paragraph inherits red text from <code>body</code>.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Example: Styling a Tag</h2>
+    <pre><code class="language-css">
+h1 {
+  color: #00ff00;
+}
+    </code></pre>
+
+    <p>This changes the color of all <code>&lt;h1&gt;</code> elements to bright green.</p>
+    <div style="border: 1px solid #ccc; padding: 1em;">
+      <h1 style="color: #00ff00">This is a green heading</h1>
+    </div>
+  </section>
+
+  <section>
+    <h2>Example: Styling a Class</h2>
+    <pre><code class="language-css">
+p.ex {
+  color: blue;
+}
+    </code></pre>
+
+    <p>This styles paragraphs with <code>class="ex"</code> differently.</p>
+    <div style="border: 1px solid #ccc; padding: 1em;">
+      <p class="ex" style="color: blue">This paragraph is blue because it has the class "ex".</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Example: Overriding with an ID</h2>
+    <pre><code class="language-css">
+#special {
+  color: purple;
+}
+    </code></pre>
+
+    <p>IDs are <strong>stronger</strong> than classes or tags, so they override the others</p>
+    <div style="border: 1px solid #ccc; padding: 1em;">
+      <p id="special" class="ex" style="color:purple">This paragraph is purple, not blue!</p>
+    </div>
+  </section>
+</section>
+
+
+<section>
+  <section>
+    <h2>CSS Properties We'll Use Today</h2>
+    <ul>
+      <li><code>color</code> – text color</li>
+      <li><code>background-color</code> – background shade</li>
+      <li><code>padding</code> – inside space</li>
+      <li><code>margin</code> – outside space</li>
+      <li><code>border</code> – border around things</li>
+      <li><code>border-radius</code> – rounded corners</li>
+      <li><code>max-width</code> – control size of elements</li>
+      <li><code>text-align</code> – left, right, center text</li>
+    </ul>
+  </section>
+</section>
+
+<section>
+  <h2>Get Started!</h2>
+  <p>Use the starter CodePen to style Maelor:</p>
+  <p><a href="https://codepen.io/mrwardkkhs/pen/raaepPG?editors=0100" target="_blank">[Open Starter CodePen]</a></p>
+  <p>Check the CSS block for further instructions</p>
+</section>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/highlight.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+  Reveal.initialize({ plugins: [ RevealHighlight ] });
+</script>
+
+<script>
+  const logo = document.getElementById("animate-svg");
+  const parts = logo.querySelectorAll("path, polygon"); // FIX: select both paths AND polygons
+
+  const timeline = gsap.timeline({ defaults: { ease: "power2.out" } });
+
+  // First: fade and scale the whole logo
+  timeline.from(logo, {
+    opacity: 0,
+    scale: 0.3,
+    duration: 1.5
+  });
+
+  // Then: animate each part individually
+  timeline.from(parts, {
+    stagger: 0.1, // faster stagger
+    duration: 0.5,
+    scale: 0,
+    transformOrigin: "50% 50%",
+    ease: "back.out(2)"
+  }, "-=1"); // start animating parts slightly before the whole logo finishes (overlap)
+
+  // Optional hover bounce
+  logo.addEventListener("mouseenter", () => {
+    gsap.to(logo, {
+      scale: 1.05,
+      duration: 0.3,
+      ease: "power1.out"
+    });
+  });
+
+  logo.addEventListener("mouseleave", () => {
+    gsap.to(logo, {
+      scale: 1,
+      duration: 0.3,
+      ease: "power1.in"
+    });
+  });
+</script>
+
+
+</body>
+</html>
+
